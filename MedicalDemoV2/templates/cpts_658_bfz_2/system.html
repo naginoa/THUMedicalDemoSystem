@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blog</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Medi Cure Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- toggle menu links -->
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- //menu links -->
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- effect9 links -->
+<link href="css/ihover.css" rel="stylesheet" media="all">
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+</head>
+<!-- slide-toggle-menu -->
+<body class="cbp-spmenu-push">
+       <!--top-header-->
+		<!--bottom-->
+		  <section class="button">
+					<button id="showLeftPush"><img src="images/menu.png" alt=""></button>
+		   </section>
+			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+				<h3>Menu</h3>
+						<a href="index.html">HOME</a>
+						<a href="about.html">ABOUT</a>
+						<a href="system.html" class="active">SYSTEM</a>
+						<a href="shortcodes.html">SHORT CODES</a>
+						<a href="gallery.html">GALLERY</a>
+						<a href="contact.html">CONTACT</a>
+		    </nav>
+		  
+		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+				if( button !== 'showRightPush' ) {
+					classie.toggle( showRightPush, 'disabled' );
+				}
+			}
+		</script>
+<!-- banner -->
+<div class="banner page-head">
+	<div class="logo">
+		<h1><a href="index.html">清华-讯飞</a></h1>
+	</div>
+	<div class="search">		
+		<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a>
+	</div>
+	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+		<div id="small-dialog" class="mfp-hide">
+			<div class="search-top">
+				<div class="login">
+					<input type="submit" value="">
+					<input type="text" value="Type something..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">		
+				</div>			
+			</div>
+			<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+			</script>				
+		</div>
+	
+</div>
+<!-- //banner -->
+<!-- blog -->
+<div class="blog-page">
+		<div class="container">
+			<h3 class="tittle">SYSTEM</h3>
+			<div class="blog-pag">
+				<div class="blog-page-grids">
+					<div class="blog-page-grid">
+						<h3><a href="http://101.6.64.59:9647">辅助诊断系统</a></h3>
+						<p>Published on<span> September 10</span></p>
+					</div>
+					<div class="blog-page-grid1">
+						<p>18<a href="#"> Comments</a></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="blog-page-grids-bottom">
+					<div class="blog-page-grids-bot">
+						<a href="http://101.6.64.59:9647"><img src="images/4.jpg" alt=" " /></a>
+					</div>
+					<div class="blog-page-grids-bot1">
+						<h4>计算机辅助诊断（computer aided diagnosis，CAD）</h4>
+						<p>通过影像学、医学图像处理技术以及其他可能的生理、生化手段，结合计算机的分析计算，辅助发现病灶，提高诊断的准确率。现在常说的CAD技术主要是基于医学影像学的计算机辅助技术。与所述CAD相区别，后者重点是检测，计算机只需要对异常征象进行标注，在此基础上进行常见的影像处理，并无需进行进一步诊断。即，计算机辅助诊断是计算机辅助检测的延伸和最终目的，相应地，计算机辅助检测是计算机辅助诊断的基础和必经阶段。</p>
+						<ul>
+							<li><a href="#"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>2 Tags</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>Tincidunt</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Admin</a></li>
+						</ul>
+						<div class="more">
+							<a href="http://101.6.64.59:9647" class="hvr-outline-out button2">点击进入</a>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="blog-pag">
+				<div class="blog-page-grids">
+					<div class="blog-page-grid">
+						<h3><a href="single.html">Curabitur aliquet quam id dui posuere blandit</a></h3>
+						<p>Published on<span> September 10</span></p>
+					</div>
+					<div class="blog-page-grid1">
+						<p>20<a href="#"> Comments</a></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="blog-page-grids-bottom">
+					<div class="blog-page-grids-bot">
+						<a href="single.html"><img src="images/44.jpg" alt=" " /></a>
+					</div>
+					<div class="blog-page-grids-bot1">
+						<h4>porttitor accumsan tincidunt</h4>
+						<p>Contrary wipopular belief,Lorem Ipsum is not simply 
+						random text It has roots in a piece of
+						classical Latin literature from
+						Donec rutrum congue leo eget malesuada.Curabitur non nulla sit amet
+						nisl tempus convallis quis ac lactus.Sed porttitor lactus nibh.Proin
+						eget tortor risus.Nulla porttitor accumsan tincidunt.Nulla
+						porttitoraccumsan tincidunt.</p>
+						<ul>
+							<li><a href="#"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>2 Tags</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>Tincidunt</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Admin</a></li>
+						</ul>
+						<div class="more">
+							<a href="single.html" class="hvr-outline-out button2">Read More</a>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="blog-pag">
+				<div class="blog-page-grids">
+					<div class="blog-page-grid">
+						<h3><a href="single.html">Nulla porttitor congue malesuada.Curabitur non nulla</a></h3>
+						<p>Published on<span> September 10</span></p>
+					</div>
+					<div class="blog-page-grid1">
+						<p>21<a href="#"> Comments</a></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="blog-page-grids-bottom">
+					<div class="blog-page-grids-bot">
+						<a href="single.html"><img src="images/444.jpg" alt=" " /></a>
+					</div>
+					<div class="blog-page-grids-bot1">
+						<h4>porttitor accumsan tincidunt</h4>
+						<p>Contrary wipopular belief,Lorem Ipsum is not simply 
+						random text It has roots in a piece of
+						classical Latin literature from
+						Donec rutrum congue leo eget malesuada.Curabitur non nulla sit amet
+						nisl tempus convallis quis ac lactus.Sed porttitor lactus nibh.Proin
+						eget tortor risus.Nulla porttitor accumsan tincidunt.Nulla
+						porttitoraccumsan tincidunt.</p>
+						<ul>
+							<li><a href="#"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>2 Tags</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>Tincidunt</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Admin</a></li>
+						</ul>
+						<div class="more">
+							<a href="single.html" class="hvr-outline-out button2">Read More</a>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<nav>
+				<ul class="pagination blg-pg text-center">
+					<li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+				</ul>
+			 </nav>
+		</div>
+</div>
+<!-- //blog -->
+<!-- contact -->
+<div class="contact-home">
+	<div class="map-home">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2482.432383990807!2d0.028213999961443994!3d51.52362882484525!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1423469959819"></iframe>
+		<div class="map-pos">
+			<div class="login-pad">
+				<h2>MAKE AN APPOINTMENT</h2>
+					<form>
+						<input type="text" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" required="">
+						<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+						<input type="text" value="Mobile" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile';}" required="">
+						<label class="checkbox"><input type="checkbox" name="checkbox" checked><i> </i>Subscribe in your Newsletter</label>
+						<textarea placeholder="Message" required=""></textarea>
+						<input type="submit" value="SEND">
+					</form>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //contact -->
+<!-- copy-right -->
+<div class="copy-right">
+	<div class="container">
+		<p>Copyright &copy; 2018.THU + Iflytek All rights reserved.</p>
+	</div>
+</div>
+<!-- //copy-right -->
+<!-- Bootstrap core JavaScript-->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<!-- js -->
+		 <script src="js/bootstrap.js"></script>
+	<!-- js -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>

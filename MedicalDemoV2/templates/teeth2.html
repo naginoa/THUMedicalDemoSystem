@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="span2">
+        </div>
+        <div class="span8">
+            <h3 class="text-center">
+                牙齿系统
+            </h3>
+            <div class="row">
+                <div class="span5">
+                    <form action="/test/" method="post" style="height: 1000px; width: 600px">
+                        <input type="file" name="test_file"/>
+                        <textarea style="height: 1000px; width: 600px">{{ f }}}</textarea>
+                        <textarea style="height: 1000px; width: 600px;float: right;" >{{ d }}</textarea>
+                        <button type="submit" class="btn">提交</button>
+                    </form>
+                </div>
+                <div class="span2">
+                </div>
+            </div>
+        </div>
+        <div class="span2">
+        </div>
+
+    <table border="1" style="float: right">
+  <thead>
+    <tr>
+      <th>牙位</th>
+      <th>文本</th>
+        <th>属性</th>
+        <th>属性值</th>
+        <th>说明</th>
+        <th>标记</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for a in g %}
+    <tr>
+      <td>{{ a.tooth_map_str }}</td>
+      <td>{{ a.text }}</td>
+        <td>{{ a.property }}</td>
+        <td>{{ a.property_chn }}</td>
+        <td>{{ a.value }}</td>
+        <td>{{ a.description }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+        <ul id="navigation">
+        {% for a in u %}
+            <tr>
+                <td class="td1">
+                    <img src="{{ a }}">
+                </td>
+            </tr>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
