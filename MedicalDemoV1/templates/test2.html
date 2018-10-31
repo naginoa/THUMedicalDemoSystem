@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/test/" method="post" style="height: 1000px; width: 600px">
+    <input type="file" name="test_file"/>
+    <textarea style="height: 1000px; width: 600px">{{ f }}}</textarea>
+    <button type="submit" class="btn">提交</button>
+</form>
+<table border="1" style="float: right">
+  <thead>
+    <tr>
+      <th>牙位</th>
+      <th>文本</th>
+        <th>属性</th>
+        <th>属性值</th>
+        <th>说明</th>
+        <th>标记</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for a in g %}
+    <tr>
+      <td>{{ a.tooth_map_str }}</td>
+      <td>{{ a.text }}</td>
+        <td>{{ a.property }}</td>
+        <td>{{ a.property_chn }}</td>
+        <td>{{ a.value }}</td>
+        <td>{{ a.description }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</body>
+</html>
