@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://101.6.65.74:8000/index -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>XXX系统</title>
+    <!-- Bootstrap core CSS -->
+    <link href="http://101.6.65.74:8000/templates/css/bootstrap.min-teeth.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <div class="row-fluid">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+            <br>
+            
+            <div>
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="http://101.6.65.74:8000/index">首页</a>
+                    </li>
+                    <li>
+                        <a href="http://101.6.65.74:8000/second">方案</a>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <div class="row-fluid">
+                <div class="col-md-12 ">
+                    <form id="uploadForm" enctype="multipart/form-data" action="http://101.6.65.74:8000/get_desc">
+                        <div>
+                            <label for="file" class=" btn btn-primary">上传文件</label>
+
+                            <input type="file" class="info" name="file" id="file" value="" style="display:none">
+                            <br>
+                        </div>
+                    </form>
+                    <br>
+                </div>
+
+                <div class="col-md-12 ">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                输入数据
+                            </h3>
+                        </div>
+                        <textarea class="panel-body" style="height:400px; width: 100%;overflow:auto;" id="desc_text">﻿
+北京大学口腔医院
+
+
+
+
+
+
+日期:
+科室:
+患者:54	门(急)诊病历	**
+		
+________________________________________
+主  诉：上下颌多牙缺失3年左右。
+现病史：3个月来，左上前牙拔除全口多牙缺失,镶牙治疗使曾于本院牙周基础治疗，及镶牙1次，现义齿佩戴无不适。今日牙周复诊，患者自述牙周医师要求拔除右上后牙（未见牙周病历），患者要求明确拔牙后是否影响义齿佩戴
+既往史：侵袭性牙周炎
+家族史：无特殊
+全  身：健康
+检  查：87654/1/24/145678  缺失，近远中间隙基本正常，合龈间距基本正常,剩余牙槽嵴轻度吸收，黏膜未见明显异常
+ 余牙松动I-II度，牙龈无红肿，无龈退缩。X线示牙槽骨吸收至根中1/3至根尖1/3
+ 旧义齿修复，固位稳定尚可，无破损，有磨损无压痛。
+口腔卫生状况一般，牙石(+)。
+
+
+
+ 	诊断：上下颌 牙列缺损 
+治疗计划：
+3.择期重新修复
+处 置：向患者交代口腔状况、治疗计划、修复类型、费用等，告知患者7/ / / 拔除后上颌RPD固位不佳,易松动,食物嵌塞,建议拔除后重新修复 患者知情、理解。 
+          
+________________________________________                                 
+
+
+
+
+</textarea>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <form id="uploadForm2" enctype="multipart/form-data" action="http://101.6.65.74:8000/index">
+                        <div>
+                            <label for="button" class=" btn btn-primary" style="margin-bottom: 30px;">结构化</label>
+
+                            <input type="button" class="info" name="button" id="button" value="" style="display:none">
+                            <br>
+                        </div>
+                    </form>
+                    <table class="table table-bordered table-hover" id="desc_table" style="">
+                        <thead>
+                        <tr class="danger">
+                            <th>
+                                牙位
+                            </th>
+                            <th>
+                                文本
+                            </th>
+                            <th>
+                                属性
+                            </th>
+                            <th>
+                                属性值
+                            </th>
+                            <th>
+                                说明
+                            </th>
+                            <th>
+                                标记
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody id="table_body"><tr class="active" id="tr_0"><td>87654/1/24/145678</td><td>缺失</td><td>is_missing</td><td>缺失</td><td>1</td><td>缺失</td></tr><tr class="success" id="tr_1"><td></td><td>近远中间隙基本正常</td><td>mesio_distal_space_distance</td><td>近远中间隙的距离</td><td>0</td><td>正常</td></tr><tr class="active" id="tr_2"><td></td><td>合龈间距基本正常</td><td>occluso_gingival_space</td><td>合龈间隙的距离</td><td>0</td><td>正常</td></tr><tr class="warning" id="tr_3"><td></td><td>剩余牙槽嵴轻度吸收</td><td>residual_ridge_conditions</td><td>缺牙部位剩余牙槽嵴情况</td><td>1</td><td>轻度</td></tr><tr class="active" id="tr_4"><td></td><td>黏膜未见明显异常</td><td>pain_hyperemization_swollen_and_ucler</td><td>黏膜疼痛,增生,肿胀,溃疡</td><td>0</td><td>无</td></tr><tr class="info" id="tr_5"><td>87654/1/24/145678</td><td>牙龈无红肿</td><td>gingival_swollen</td><td>牙龈红肿</td><td>0</td><td>无红肿</td></tr><tr class="active" id="tr_6"><td>87654/1/24/145678</td><td>无龈退缩</td><td>gingival_recession</td><td>龈退缩</td><td>0</td><td>无</td></tr><tr class="success" id="tr_7"><td>87654/1/24/145678</td><td>x线示牙槽骨吸收至根中1/3至根尖1/3</td><td>teeth_related_imaging</td><td>牙相关影像-牙槽骨吸收情况</td><td>2</td><td>根长2/3</td></tr><tr class="active" id="tr_8"><td></td><td>固位稳定尚可</td><td>retention_of_existed_restorations</td><td>固位</td><td>1</td><td>一般</td></tr><tr class="warning" id="tr_9"><td></td><td>口腔卫生状况一般</td><td>oral_hygiene</td><td>口腔卫生情况</td><td>1</td><td>一般</td></tr><tr class="active" id="tr_10"><td></td><td>牙石(+)</td><td>dental_calculus</td><td>牙石情况</td><td>1</td><td>+</td></tr></tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+</div>
+    <script src="http://101.6.65.74:8000/templates/js/jquery-3.3.1.min-teeth.js"></script>
+    <script src="http://101.6.65.74:8000/templates/js/bootstrap.min-teeth.js"></script>
+    <script src="http://101.6.65.74:8000/templates/js/index.js"></script>
+
+
+</body></html>
