@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>System</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Medi Cure Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="/templates/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/templates/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- toggle menu links -->
+<link href="/templates/css/component.css" rel="stylesheet" type="text/css"  />
+<!-- //menu links -->
+<link href="/templates/css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- effect9 links -->
+<link href="/templates/css/ihover.css" rel="stylesheet" media="all">
+<!-- js -->
+<script src="/templates/js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='/iframe' rel='stylesheet' type='text/css'>
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="/templates/js/move-top.js"></script>
+		<script type="text/javascript" src="/templates/js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+</head>
+<!-- slide-toggle-menu -->
+<body class="cbp-spmenu-push">
+       <!--top-header-->
+		<!--bottom-->
+		  <section class="button">
+					<button id="showLeftPush"><img src="/templates/images/menu.png" alt=""></button>
+		   </section>
+			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+				<h3>Menu</h3>
+						<a href="/home">HOME</a>
+						<a href="/system" class="active">SYSTEM</a>
+						<a href="/contact">CONTACT</a>
+		    </nav>
+		  
+		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		<script src="/templates/js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+				if( button !== 'showRightPush' ) {
+					classie.toggle( showRightPush, 'disabled' );
+				}
+			}
+		</script>
+<!-- banner -->
+<div class="banner page-head">
+	<div class="logo">
+		<h1><a href="home.html">清华-讯飞</a></h1>
+	</div>
+	<div class="search">		
+		<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a>
+	</div>
+	<script src="/templates/js/jquery.magnific-popup.js" type="text/javascript"></script>
+		<div id="small-dialog" class="mfp-hide">
+			<div class="search-top">
+				<div class="login">
+					<input type="submit" value="">
+					<input type="text" value="Type something..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">		
+				</div>			
+			</div>
+			<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+			</script>				
+		</div>
+	
+</div>
+<!-- //banner -->
+<!-- blog -->
+<div class="blog-page">
+		<div class="container">
+			<h3 class="tittle">SYSTEM</h3>
+			<div class="blog-pag">
+				<div class="blog-page-grids">
+					<div class="blog-page-grid">
+						<h3><a href="http://101.6.65.182:5000/">辅助诊断系统</a></h3>
+						<p>Published on<span> September 10</span></p>
+					</div>
+					<div class="blog-page-grid1">
+						<p>18<a href="#"> Comments</a></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="blog-page-grids-bottom">
+					<div class="blog-page-grids-bot">
+						<a href="http://101.6.65.182:5000/"><img src="/templates/images/4.jpg" alt=" " /></a>
+					</div>
+					<div class="blog-page-grids-bot1">
+						<h4>计算机辅助诊断（computer aided diagnosis，CAD）</h4>
+						<p>通过影像学、医学图像处理技术以及其他可能的生理、生化手段，结合计算机的分析计算，辅助发现病灶，提高诊断的准确率。现在常说的CAD技术主要是基于医学影像学的计算机辅助技术。与所述CAD相区别，后者重点是检测，计算机只需要对异常征象进行标注，在此基础上进行常见的影像处理，并无需进行进一步诊断。即，计算机辅助诊断是计算机辅助检测的延伸和最终目的，相应地，计算机辅助检测是计算机辅助诊断的基础和必经阶段。</p>
+						<ul>
+							<li><a href="#"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>2 Tags</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>Tincidunt</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Admin</a></li>
+						</ul>
+						<div class="more">
+							<a href="http://101.6.65.182:5000/" class="hvr-outline-out button2">点击进入</a>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="blog-pag">
+				<div class="blog-page-grids">
+					<div class="blog-page-grid">
+						<h3><a href="/index">固定义齿自动设计系统</a></h3>
+						<p>Published on<span> September 10</span></p>
+					</div>
+					<div class="blog-page-grid1">
+						<p>20<a href="#"> Comments</a></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="blog-page-grids-bottom">
+					<div class="blog-page-grids-bot">
+						<a href="/index"><img src="/templates/images/44.jpg" alt=" " /></a>
+					</div>
+					<div class="blog-page-grids-bot1">
+						<h4>义齿自动设计(Automatic design of fixed denture)</h4>
+						<p>可摘局部义齿是一种患者可以自行摘戴的用于牙列缺损的修复体，可满足不同群体的患者需求，这种设计方式存在如下缺点:
+1.手绘效率较低，且存在偏差
+2.不同医生对于各部件的绘制方法存在差异
+针对上述问题，实验室与北京大学口腔医院合作，共同开发了可摘局部义齿临床决策支持系统。该系统针对可摘局部义齿设计，基于人工智能技术与专家知识，依据患者口腔检查信息，自动生成可摘局部义齿设计方案，并可视化展示，辅助临床医生完成可摘局部义齿方案的设计。</p>
+						<ul>
+							<li><a href="#"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>2 Tags</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>Tincidunt</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Admin</a></li>
+						</ul>
+						<div class="more">
+							<a href="/index" class="hvr-outline-out button2">点击进入</a>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="blog-pag">
+				<div class="blog-page-grids">
+					<div class="blog-page-grid">
+						<h3><a href="http://101.6.65.41:8080/report/reportDesktop">超声质检系统</a></h3>
+						<p>Published on<span> September 10</span></p>
+					</div>
+					<div class="blog-page-grid1">
+						<p>21<a href="#"> Comments</a></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="blog-page-grids-bottom">
+					<div class="blog-page-grids-bot">
+						<a href="http://101.6.65.41:8080/report/reportDesktop"><img src="/templates/images/444.jpg" alt=" " /></a>
+					</div>
+					<div class="blog-page-grids-bot1">
+						<h4>超声质检(Ultrasonic quality inspection)</h4>
+						<p>由于超声检查人数的增加，医院每天会产生大量的超声报告。伴随医疗水平的提高，对超声报告质量要求随之升高。传统的人工质检的做法，是对全部的报告进行筛选，之后再对筛选的报告进行人工检查，这种检查方式难免会出现遗漏的问题，同时由于“问题”报告占比较少，被抽检出的概率也较低。因此，我们设计了一种自动超声报告质检系统，能够自动检测处超声报告中的常见错误。</p>
+						<ul>
+							<li><a href="#"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>2 Tags</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>Tincidunt</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Admin</a></li>
+						</ul>
+						<div class="more">
+							<a href="http://101.6.65.41:8080/report/reportDesktop" class="hvr-outline-out button2">点击进入</a>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<nav>
+				<ul class="pagination blg-pg text-center">
+					<li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+					<li><a href="/system">1</a></li>
+					<li><a href="/system2">2</a></li>
+					<li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+				</ul>
+			 </nav>
+		</div>
+</div>
+<!-- //blog -->
+<!-- contact -->
+<div class="contact-home">
+	<div class="map-home">
+		<iframe src="/iframe"></iframe>
+		<div class="map-pos">
+			<div class="login-pad">
+				<h2>MAKE AN APPOINTMENT</h2>
+					<form>
+						<input type="text" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" required="">
+						<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+						<input type="text" value="Mobile" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile';}" required="">
+						<label class="checkbox"><input type="checkbox" name="checkbox" checked><i> </i>Subscribe in your Newsletter</label>
+						<textarea placeholder="Message" required=""></textarea>
+						<input type="submit" value="SEND">
+					</form>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //contact -->
+<!-- copy-right -->
+<div class="copy-right">
+	<div class="container">
+		<p>Copyright &copy; 2018.THU + Iflytek All rights reserved.</p>
+	</div>
+</div>
+<!-- //copy-right -->
+<!-- Bootstrap core JavaScript-->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<!-- js -->
+		 <script src="/templates/js/bootstrap.js"></script>
+	<!-- js -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>
